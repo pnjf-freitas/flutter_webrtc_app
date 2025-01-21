@@ -1,16 +1,37 @@
 # flutter_webrtc_app
 
-A new Flutter project.
+A new Flutter project for peer-to-peer video calling using WebRTC.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application that enables peer-to-peer video calling using WebRTC.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter](https://flutter.dev/docs/get-started/install) (version 3.5.4 or higher)
+- [Dart](https://dart.dev/get-dart) (version 2.18.0 or higher)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/flutter_webrtc_app.git
+    cd flutter_webrtc_app
+    ```
+
+2. Install dependencies:
+    ```sh
+    flutter pub get
+    ```
+
+3. Run the app:
+    ```sh
+    flutter run
+    ```
+
+### Configuration
+
+Update the `websocketURL` in [main.dart](/lib/main.dart) with your WebSocket server URL:
+```dart
+final String websocketURL = "YOUR_WEBSOCKET_SERVER_URL";
+```
